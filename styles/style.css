@@ -1,0 +1,424 @@
+
+* {
+  padding:0%;
+  margin:0%;
+  list-style: none;
+  font-family: Montserrat;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #F5F4F4;
+}
+
+div {
+  color:black;
+}
+
+li a {
+  text-decoration: none;
+  color:black;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  display:grid;
+  height: 100vh;
+  width:80vw;
+  grid-template-columns: 2fr 1.5fr ;
+  grid-template-rows: 1fr 1fr 1fr 1fr ;
+  grid-template-areas:
+    "sidebar  nav"
+    "sidebar  main"
+    "sidebar  main"
+    "sidebar  main"
+
+}
+
+.container2 {
+  display:grid;
+  height: 50vh;
+  width:80vw;
+  grid-template-columns: 2fr 1.5fr ;
+  grid-template-rows: 0.2fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "sidebar  nav"
+    "sidebar  main"
+    "sidebar  main"
+    "sidebar  main"
+}
+
+.container3 {
+  display:grid;
+  height: 200vh;
+  width:80vw;
+  grid-template-columns: 2fr 1.5fr ;
+  grid-template-rows: 0.2fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "sidebar  nav"
+    "sidebar  main"
+    "sidebar  main"
+    "sidebar  main"
+}
+
+
+
+/* ---------------nav------------- */
+
+ nav {
+   grid-area: nav;
+   padding-top: 10px;
+ }
+
+ nav ul {
+   text-align:left;
+   margin-top: 30px;
+   margin-left: 30px;
+ }
+
+ nav li {
+   display:inline;
+   margin: 10px;
+   border-bottom:solid  rgb(66,81,97) 2px;
+ }
+
+nav li a:hover {
+  border-bottom:solid #885a5a 2px;
+}
+
+/* ---------------main------------- */
+
+ main {
+   grid-area:main;
+ }
+
+
+
+.text {
+ margin-left: 40px;
+ width: 90%;
+ margin-top: 20px;
+}
+
+.text2 {
+ margin-left: 40px;
+ width: 90%;
+ margin-top: 20%;
+}
+
+p{
+  margin-top: 10px;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 30px;
+}
+
+hr {
+  height:5px;
+  border-width:0;
+  background-color:#885a5a;
+
+}
+
+.btn{
+  margin-top: 40px;
+  border-bottom: solid #885a5a 2px;
+  width: 80px;
+}
+
+/* ---------------sidebar------------- */
+
+ #sidebar {
+   background-image: url(../pictures/aboutme.png);
+   background-size:cover;
+   grid-area:sidebar;
+ }
+
+
+ #sidebar2 {
+   background-image: url(../pictures/2.png);
+   background-size: cover;
+   grid-area:sidebar;
+ }
+
+ #sidebar3 {
+   grid-area:sidebar;
+   border: solid rgb(66,81,97) 5px;
+ }
+
+
+ .lightroom{
+   background-image: url(../pictures/IMG_7687.JPG);
+   width:100%;
+   height: 100%;
+   background-size: cover;
+   float:left;
+ }
+
+ .lightroom-after {
+   background-image: url(../pictures/lightroomproject.jpg);
+   width:100%;
+   height: 50%;
+   background-size: cover;
+ }
+
+ .lightroom-before {
+   background-image: url(../pictures/IMG_7687.JPG);
+   width:50%;
+   height: 50%;
+   background-size: cover;
+   float:left;
+ }
+
+
+ .setup {
+   background-image: url(../pictures/setup.jpeg);
+   width:50%;
+   height: 50%;
+   background-size: cover;
+   float:left;
+ }
+
+ #sidebar4 {
+   background-image: url(../pictures/xdproject.png);
+   background-size: cover;
+   grid-area:sidebar;
+   border: solid rgb(66,81,97) 5px;
+ }
+
+ #sidebar5 {
+   grid-area:sidebar;
+   border: solid rgb(66,81,97) 5px;
+ }
+
+ .prototype1 {
+   background-image: url(../pictures/project2-prototype.jpg);
+   background-size:cover;
+   width:100%;
+   height: 100%;
+ }
+
+.prototype {
+  background-image: url(../pictures/project2-prototype.jpg);
+  background-size:cover;
+  width:100%;
+  height: 25%;
+}
+
+.lo-fi {
+  background-image: url(../pictures/lo-fi.jpg);
+  background-size:cover;
+  width:100%;
+  height: 25%;
+}
+.plakat {
+  background-image: url(../pictures/Plakatprojekt2.jpg);
+  background-size:cover;
+  width:100%;
+  height: 50%;
+  margin-left: 10px;
+}
+
+#sidebar6 {
+  grid-area:sidebar;
+  border: solid rgb(66,81,97) 5px;
+}
+
+.figure1{
+background-image: url(../pictures/animationsworkshop.png);
+background-size:cover;
+height: 100%;
+width: 100%;
+}
+
+.figure{
+background-image: url(../pictures/animationsworkshop.png);
+background-size:cover;
+height: 50%;
+width: 50%;
+}
+
+
+.illustrator{
+background-image: url(../pictures/IMG_7400.jpeg);
+background-size:cover;
+height: 50%;
+width: 100%;
+
+}
+
+.sprite{
+background-image: url(../pictures/sprite.png);
+background-size: contain;
+height: 50%;
+width: 50%;
+float: right;
+}
+
+#sidebar7 {
+  grid-area:sidebar;
+  border: solid rgb(66,81,97) 5px;
+  background-image: url(../pictures/workshopprotytyping.jpg);
+  background-size:cover;
+}
+
+
+#sidebar8 {
+  grid-area:sidebar;
+  border: solid rgb(66,81,97) 5px;
+}
+
+.code1{
+  background-image: url(../pictures/transition.png);
+  background-size:cover;
+  width:100%;
+  height: 100%;
+}
+
+.code{
+  background-image: url(../pictures/transition.png);
+  background-size:cover;
+  width:100%;
+  height: 50%;
+}
+.box{
+  background-image: url(../pictures/box.png);
+  background-size:cover;
+  width:100%;
+  height: 50%;
+}
+
+#sidebar9{
+  grid-area:sidebar;
+  border: solid rgb(66,81,97) 5px;
+
+}
+.dyrehotelet{
+  background-image: url(../pictures/dyrehotellet.jpg);
+  background-size:cover;
+  width:50%;
+  height: 50%;
+  float: right;
+}
+
+.re-design1{
+  background-image: url(../pictures/redesign.png);
+  background-size:cover;
+  width:100%;
+  height: 100%;
+}
+
+.re-design{
+  background-image: url(../pictures/redesign.png);
+  background-size:cover;
+  width:50%;
+  height: 50%;
+}
+
+.wireframe{
+  background-image: url(../pictures/wireframe.png);
+  background-size:cover;
+  width:25%;
+  height: 25%;
+}
+.wireframe2{
+  background-image: url(../pictures/wireframe2.png);
+  background-size:cover;
+  width:25%;
+  height: 25%;
+}
+.front-page{
+  background-image: url(../pictures/review.png);
+  background-size:cover;
+  width:75%;
+  height: 25%;
+    float: right;
+}
+.sub-page{
+  background-image: url(../pictures/subpage.png);
+  background-size:cover;
+  width:75%;
+  height: 25%;
+  float: right;
+}
+
+#sidebar10{
+  grid-area:sidebar;
+  background-image: url(../pictures/illustration-01.jpg);
+  background-size:cover;
+
+}
+
+#sidebar11{
+  grid-area:sidebar;
+  background-image: url(../pictures/illustration-abstract.png);
+  background-size:cover;
+}
+
+
+/* ---------------buttons up down------------- */
+
+ #up{
+   background-color: rgb(66,81,97);
+   grid-area:up;
+   text-align: center;
+   width: 100px;
+   height: 50%;
+   position: fixed;
+   top:0%;
+   right:2px;
+ }
+ #down {
+   background-color: #885a5a;
+   grid-area: down;
+   text-align: center;
+   width: 100px;
+   height: 50%;
+   position: fixed;
+   top:50%;
+   right:2px;
+
+ }
+
+#up li a{
+  color:white;
+
+}
+
+#down li a{
+  color:white;
+}
+
+h3 {
+  margin-top: 250px;
+
+}
+
+
+
+@media (max-width: 900px){
+  .container, .container2, .container3 {
+    margin-left: 5px;
+    grid-template-columns: 1fr;
+    width: 95vw;
+    height: 100vh;
+    grid-template-rows: 0.2fr 1fr 0.5fr;
+    grid-template-areas:
+    "nav"
+    "sidebar"
+    "main"
+  }
+
+  #up, #down{
+    display: none;
+  }
+  .container2{
+    height: 100vh;
+  }
+
+  .text2 {
+   margin-top: 5%;
+  }
+  #sidebar11{
+    margin-top: 20px;
+    height:
+}
